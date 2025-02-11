@@ -25,6 +25,6 @@ test.describe("American Express L1 test", () => {
     await userForm.enterEmailId("randomaname@gmail.com"); // Enter on email address
     await userForm.enterPhoneNumber("0712345678"); // Enter on date of birth
     await userForm.submitForm(); // Enter on date of birth
-    expect(await userForm.isVosInformationsPersonnellesTitleDisplayed()).toBeTruthy(); // Enter on date of birth
+    expect(await userForm.isVosInformationsPersonnellesTitleDisplayed()).toEqual(true); // Enter on date of birth
   });
 });
